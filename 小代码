@@ -10,3 +10,20 @@ int main()
 		printf("较大值是:%d\n", num2);
 	return 0;
 }
+或自定义一个函数如
+int bi(int a,int b)
+{
+	int c = 0;
+	if (a > b)
+		c = a;
+	else
+		c = b;
+	return c;
+}
+int main()
+{
+	int a = 10;
+	int b = 20;
+	printf("较大值是:%d\n", bi(a, b));
+	return 0;
+}
