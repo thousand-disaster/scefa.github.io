@@ -196,3 +196,16 @@ exp1?exp2:exp3;//exp1是真时,exp2是结果，exp1是假时,exp3是结果
 
 负数的反码和补码如：
 原码:{10000001} -> 反码:{11111110} -> 补码:{11111111 }
+
+24.关键字
+⑴typedef - 类型重命名
+//将unsigned 重命名为uiny_32,所以uint_32也是一个类型名
+typedef unsigned int uint_32
+
+int main()
+{
+  //观察num1和num2，这两个变量的类型是一样的
+   unsigned int num1 = 0;
+   uint_32 num2 = 0;
+   return 0;
+}
